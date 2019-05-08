@@ -1,6 +1,15 @@
 @import "variables";
 
+.footer-text {
+  font-family: $body-sans;
+}
+
 .footer-bg {
   background-color: $white;
   border-top: 1px solid $primary;
+}
+
+.footer-img {
+  height: 3rem;
+  width: auto;
 }

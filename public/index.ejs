@@ -1,72 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Bootstrap CDN -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+    <%- partial("partials/header.ejs") %>
+</head>
 
-        <!-- Local resources -->
-        <link href="style/all.css" type="text/css" rel="stylesheet">
-    </head>
+<body>
 
-    <body>
+<%- partial("partials/navbar.ejs") %>
 
-      <%- partial("partials/navbar.ejs") %>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Mission Statement</h1>
+        <p class="lead">User Experience Society aims to guide the design leaders of tomorrow, creating products and services that will make the world a better place.
+        </p>
+    </div>
+</div>
 
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Mission Statement</h1>
-          <p class="lead">User Experience Society aims to guide the design leaders of tomorrow, creating products and services that will make the world a better place.
-          </p>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="https://cdn.glitch.com/f1f2766e-3d74-4994-aef5-41a892aa118e%2Fj-burns.png?1555352113417" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">J Burns Meet and Greet</h5>
-                <p class="card-text">Take some time out of your day to meet J Burns!</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+                <img class="card-img-top" src="https://cdn.glitch.com/f1f2766e-3d74-4994-aef5-41a892aa118e%2Fj-burns.png?1555352113417" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">J Burns Meet and Greet</h5>
+                    <p class="card-text">Take some time out of your day to meet J Burns!</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
             </div>
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="https://cdn.glitch.com/f1f2766e-3d74-4994-aef5-41a892aa118e%2Fj-burns.png?1555352113417" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">J Burns Discusses Quantum Physics</h5>
-                <p class="card-text">Does J Burns know anything about Quantum Physics? Find out in AF 209.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="https://cdn.glitch.com/f1f2766e-3d74-4994-aef5-41a892aa118e%2Fj-burns.png?1555352113417" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">J Burns Discusses Getting the Flu Shot</h5>
-                <p class="card-text">J Burns has some strong feelings about the flu shot. Come down to Keck 156 to hear all about it.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <%- partial("partials/footer.ejs") %>
-
-
-        <div id="scripts">
-            <!-- external CDN scripts  -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-            <!-- Local JS -->
-            <script src="javascript/home.js"></script>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.glitch.com/f1f2766e-3d74-4994-aef5-41a892aa118e%2Fj-burns.png?1555352113417" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">J Burns Discusses Quantum Physics</h5>
+                    <p class="card-text">Does J Burns know anything about Quantum Physics? Find out in AF 209.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
         </div>
-    </body>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.glitch.com/f1f2766e-3d74-4994-aef5-41a892aa118e%2Fj-burns.png?1555352113417" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">J Burns Discusses Getting the Flu Shot</h5>
+                    <p class="card-text">J Burns has some strong feelings about the flu shot. Come down to Keck 156 to hear all about it.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- partial("partials/footer.ejs") %>
+
+
+<div id="scripts">
+    <!-- external CDN scripts  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Local JS -->
+    <script src="javascript/home.js"></script>
+</div>
+</body>
 
 </html>
