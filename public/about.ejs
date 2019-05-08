@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Bootstrap CDN -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-        <!-- Local resources -->
-        <link href="style/all.css" type="text/css" rel="stylesheet">
+        <%- partial("partials/header.ejs") %>
     </head>
 
     <body>
@@ -21,11 +17,11 @@
       </div>
 
       <div class="container">
-        <h1 class="display-4">Members</h1>
+        <h2 class="display-4 mb-3">Members</h2>
 
         <div class="row">
         <% for (var article in public._data) { %>
-            <div class="col-sm">
+            <div class="col-sm mb-5">
               <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="img/<%= public._data[article].picture %>" alt="Card image cap">
                 <div class="card-body">
@@ -37,6 +33,7 @@
             </div>
         <% } %>
         </div>
+      </div>
 
 
 
