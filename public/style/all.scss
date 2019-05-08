@@ -6,3 +6,15 @@
 /* Partial Style */
 @import "navbar";
 @import "footer";
+
+/* extra */
+@import "variables";
+
+
+h1, h2 {
+  font-family: $title;
+}
+
+p, a {
+  font-family: $body-sans;
+}
